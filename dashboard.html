@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Личный кабинет - Winza</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <img src="img/logo.png" alt="Winza Logo" />
+      <span>Winza</span>
+    </div>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Главная</a></li>
+        <li class="dropdown">
+          <a href="#">Розыгрыши</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Все розыгрыши</a></li>
+            <li><a href="#">Завершённые</a></li>
+          </ul>
+        </li>
+        <li><a href="#">О нас</a></li>
+        <li>
+          <div class="user-icon">👤 1111</div>
+        </li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+  </div>
+</header>
+
+<section class="prizes">
+  <div class="container">
+    <h2>Актуальные розыгрыши</h2>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-content">
+          <h3>iPhone 15 Pro</h3>
+          <p>До 25 апреля</p>
+          <button class="participate-btn">Участвовать</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h3>BMW X5</h3>
+          <p>Осталось 5 дней</p>
+          <button class="participate-btn">Участвовать</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h3>Квартира в Москве</h3>
+          <p>Финал 1 июня</p>
+          <button class="participate-btn">Участвовать</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    &copy; 2025 Winza. Все права защищены.
+  </div>
+</footer>
+
+</body>
+</html>

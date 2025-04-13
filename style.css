@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  header {
+    background-color: #1E1E1E;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 100px;
+    margin:0%
+    padding:0%
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    position: relative;
+  }
+  
+  .menu a, .register-btn {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2C2C2C;
+    min-width: 150px;
+    z-index: 100;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .dropdown-content li {
+    padding: 10px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .register-btn {
+    background: #FFC83D;
+    color: #000;
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .register-btn:hover {
+    background: #e6b236;
+  }
+  
+  .hero {
+    background: linear-gradient(120deg, #1E1E1E, #2C2C2C);
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    color: #ccc;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .prizes h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #1F1F1F;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+  }
+  
+  .card-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .participate-btn {
+    margin-top: 10px;
+    background: #FFC83D;
+    color: #000;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .participate-btn:hover {
+    background-color: #e6b236;
+  }
+  
+  footer {
+    background-color: #1E1E1E;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  .nav-toggle, .nav-toggle-label {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+      background-color: #1E1E1E;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      display: none;
+    }
+  
+    .nav-toggle:checked ~ nav .menu {
+      display: flex;
+    }
+  
+    .nav-toggle-label {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .nav-toggle-label span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px;
+    }
+  }
+  
+  /* Модальное окно */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .modal-content {
+    background-color: #1C1C1E;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    color: #FFF;
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .modal-content label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    background: #2B2B2D;
+    color: #fff;
+  }
+  
+  .modal-content button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FFC83D;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .modal-content button:hover {
+    background-color: #e6b236;
+  }
+  
+  .close-btn {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
